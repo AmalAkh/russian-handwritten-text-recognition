@@ -1,5 +1,10 @@
 # russian-handwritten-text-recognition
 The project of creating neural network possible to recognise Russian cursive handwritten text
+
+<img src="images/Figure_1.png"/>
+
+
+
 ## Requirements
 tensorflow >=2.5.0
 
@@ -8,9 +13,24 @@ Model was trained using dataset from National Technological Olympiad in artifici
 
 ## Usage
 
+Don't forget to install tensorflow!
+
+You need to download best-model.h5 and predict.py. 
+Replace path_to_images variable with path to the images. 
+```
+path_to_images = "your path here"
+```
+
+Your also have to remember that best-model.h5 should be in the same directory otherwise change  the path here:
+```
+model.load_weights("best-model.h5")
+```
+
 ## Results
 
 I got CER - 0.0194 and CTC loss - 1.6510
+
+This is good result but it is still not perfect so be careful to use it
 
 This model is able to recognise the following characters:
 
